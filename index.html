@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohan Digital Work - The Digital Solver</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f9f9f9;
+            text-align: center;
+        }
+
+        header {
+            background: #333;
+            padding: 15px;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #FFD700;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 28px;
+            cursor: pointer;
+        }
+
+        .hero {
+            background: #007BFF;
+            color: white;
+            padding: 50px 20px;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: white;
+            color: #007BFF;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        .services, .about, .contact {
+            padding: 50px 20px;
+        }
+
+        .service-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .service-box {
+            background: #fff;
+            padding: 20px;
+            width: 250px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .notice {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: red;
+        }
+
+        .pricing {
+            margin-top: 40px;
+        }
+
+        table {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                background: #444;
+                width: 100%;
+                position: absolute;
+                top: 60px;
+                left: 0;
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .menu-toggle {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Mohan Digital Work</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">&#9776;</div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>The Digital Solver</h1>
+        <p>Technical Support | Album Designing | Sketch Photo</p>
+        <a href="#services" class="btn">Explore Services</a>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-container">
+            <div class="service-box">
+                <h3>Technical Support</h3>
+                <p>Get expert solutions for your Mobile & Computer issues.</p>
+            </div>
+            <div class="service-box">
+                <h3>Album Designing</h3>
+                <p>Professional album designs in soft copy format.</p>
+            </div>
+            <div class="service-box">
+                <h3>Sketch Photo</h3>
+                <p>Beautiful sketch photos (Soft Copy + Framing 🖼️).</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="notice">
+        <p>⚠️ सभी काम सिर्फ पैसों से किए जाएंगे ⚠️</p>
+    </section>
+
+    <section class="pricing">
+        <h2>Our Pricing</h2>
+        <table>
+            <tr><th>Service</th><th>Price</th></tr>
+            <tr><td>Mobile & Computer Support</td><td>₹50 - ₹500</td></tr>
+            <tr><td>Album Designing (Soft Copy)</td><td>₹1000</td></tr>
+            <tr><td>Sketch Photo (Framing)</td><td>₹200 - ₹300</td></tr>
+        </table>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>We provide top-notch technical support and creative designing solutions, all in one place.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>📞 Mobile: <b>7084320567</b></p>
+        <p>📧 Email: <b>mohayadav03174@gmail.com</b></p>
+        <a href="https://wa.me/917084320567" target="_blank">
+            <img src="whatsapp.png" width="50px"> Chat on WhatsApp
+        </a>
+    </section>
+
+    <script>
+        document.querySelector(".menu-toggle").addEventListener("click", function () {
+            document.querySelector(".nav-links").classList.toggle("active");
+        });
+    </script>
+
+</body>
+</html>>
